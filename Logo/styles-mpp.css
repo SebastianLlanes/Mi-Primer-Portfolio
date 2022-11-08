@@ -69,13 +69,40 @@ main section nav ul {
 main section nav ul button {
     margin-left: 10px;
     border: 1px ridge var(--gold);
+    border-radius: 16px;
     font-family: 'Plus Jakarta Sans';
-
-    width: 100px;
+    width: 120px;
     height: 50px;
     text-align: center;
     background-color: var(--lighest-blue);
     color: var(--white);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+main section nav ul button:hover {
+    box-shadow: var(--gold);
+    color: var(--blue);
+    border-color: var(--lighest-blue);
+}
+main section nav ul button::after {
+    content: "";
+    background: var(--gold);
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0) rotate(-180deg);
+    transition: all 0.5s ease;
+}
+main section nav ul button:hover::after {
+    transition: all 0.5s ease-out;
+    transform: scale(1, 1) rotate(0deg);
 }
 .section-nav_button {
     display: flex;
@@ -86,9 +113,11 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    padding: 47px 50px 0 0;
 }
 aside figure {
     margin-top: 6px;
+    margin-right: 120px;
     height: 40%;
     background-color: #9599E2;
     background-image: linear-gradient(180deg, #9599E2 0%, #8BC6EC 10%, #9fe2bf 66%, #ccccff 100%);
@@ -110,6 +139,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding: 30px 0 25px 0;
     height: 68px;
     align-items: center;
     list-style: none;
