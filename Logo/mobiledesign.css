@@ -40,8 +40,8 @@ main section {
     align-items: center;
 }
 main section div:nth-child(1) {
-    height: 188px;
-    width: 380px;
+    height: 40px;
+    width: 100px;
     background-color: var(--gold);
     color: var(--blue);
     font-size: 2.4rem;
@@ -60,9 +60,6 @@ main section div:nth-child(2) ul {
     flex-direction: row;
     list-style: circle;
 }
-main section div:nth-child(2) ul li {
-    margin-left: 40px;
-}
 main section nav ul {
     display: flex;
 }
@@ -71,8 +68,8 @@ main section nav ul button {
     border: 1px ridge var(--gold);
     border-radius: 16px;
     font-family: 'Plus Jakarta Sans';
-    width: 120px;
-    height: 50px;
+    width: 80px;
+    height: 44px;
     text-align: center;
     background-color: var(--lighest-blue);
     color: var(--white);
@@ -109,32 +106,6 @@ main section nav ul button:hover::after {
     flex-direction: column-reverse;
     align-items: center;
 }
-.html-button_span {
-    background: rgba(0,0,0,.3);
-	position: fixed;
-	top: 72px;
-	bottom: 0;
-	left: 0;
-	right: 0;
-    align-items: flex-start;
-	display: flex;
-    flex-direction: column;
-}
-.html-button_span img {
-    height: 440px;
-}
-.inactive {
-    display: none;
-}
-.nav-spanButton_close {
-    width: 44px;
-    height: 34px;
-    position: fixed;
-}
-.nav-spanButton_close img {
-    width: 20px;
-    height: 20px;
-}
 aside {
     display: flex;
     flex-direction: column;
@@ -153,7 +124,7 @@ aside figure {
    
 }
 aside figure img {
-    width: 244px;
+    width: 80px;
 }
 aside div {
     color: var(--white);
