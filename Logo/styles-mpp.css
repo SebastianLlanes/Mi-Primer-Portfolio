@@ -1,5 +1,5 @@
 :root {
-    --gold: #bd9c5a;
+    --gold: #f5a80e;
     --lighest-blue: #195170;
     --blue: #022564;
     --dark-red: #452843;
@@ -31,6 +31,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border-top: 4px ridge var(--gold);
     background-color: var(--blue);
 }
 main section {
@@ -40,8 +41,11 @@ main section {
     align-items: center;
 }
 main section div:nth-child(1) {
-    height: 188px;
+    height: 200px;
     width: 380px;
+    text-align: center;
+    border: 8px groove;
+    border-radius: 5px;
     background-color: var(--gold);
     color: var(--blue);
     font-size: 2.4rem;
@@ -51,8 +55,10 @@ main section div:nth-child(1) {
 main section div:nth-child(2) {
     display: flex;
     background-color: var(--gold);
+    border: 5px groove;
     font-family: 'Plus Jakarta Sans';
-    font-size: 2.2rem;
+    font-weight: bold;
+    font-size: 1.6rem;
     color: var(--lighest-blue);
 }
 main section div:nth-child(2) ul {
@@ -68,10 +74,10 @@ main section nav ul {
 }
 main section nav ul button {
     margin-left: 10px;
-    border: 1px ridge var(--gold);
-    border-radius: 16px;
+    border: 0px groove var(--white);
+    border-radius: 30px;
     font-family: 'Plus Jakarta Sans';
-    width: 120px;
+    width: 88px;
     height: 50px;
     text-align: center;
     background-color: var(--lighest-blue);
@@ -79,12 +85,12 @@ main section nav ul button {
     position: relative;
     z-index: 1;
     overflow: hidden;
-    display: inline-block;
+    transition: .5s;
 }
 main section nav ul button:hover {
-    box-shadow: var(--gold);
-    color: var(--blue);
-    border-color: var(--lighest-blue);
+    color: var(--gold);
+    box-shadow: 0 0 15px  var(--gold);
+    text-shadow: 0 0 15px  var(--gold);
 }
 main section nav ul button::after {
     content: "";
@@ -97,20 +103,26 @@ main section nav ul button::after {
     right: 0;
     top: 0;
     bottom: 0;
-    transform: scale(0, 0) rotate(-180deg);
-    transition: all 0.5s ease;
+    /* transform: scale(0, 0) rotate(-180deg);
+    transition: all 0.3s ease;  */
+    transition: .5s;
+    transform: scale(.05);
+    z-index: -1; 
+  
+  
 }
-main section nav ul button:hover::after {
-    transition: all 0.5s ease-out;
+/* main section nav ul button:hover::after {
+    transition: all 0.3s ease-out;
     transform: scale(1, 1) rotate(0deg);
-}
+    box-shadow: 0 0 20px var(--gold);
+} */
 .section-nav_button {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
 }
 .html-button_span {
-    background: rgba(0,0,0,.3);
+    background: rgba(0,0,0,.7);
 	position: fixed;
 	top: 72px;
 	bottom: 0;
@@ -125,15 +137,7 @@ main section nav ul button:hover::after {
 }
 .inactive {
     display: none;
-}
-.nav-spanButton_close {
-    width: 44px;
-    height: 34px;
-    position: fixed;
-}
-.nav-spanButton_close img {
-    width: 20px;
-    height: 20px;
+
 }
 aside {
     display: flex;
@@ -147,9 +151,9 @@ aside figure {
     height: 40%;
     background-color: #9599E2;
     background-image: linear-gradient(180deg, #9599E2 0%, #8BC6EC 10%, #9fe2bf 66%, #ccccff 100%);
-    border-top: 3px groove var(--gold);
-    border-right: 3px groove var(--gold);
-    border-left: 3px groove var(--gold);
+    border-top: 8px groove var(--white);
+    border-right: 8px groove var(--white);
+    border-left: 8px groove var(--white);
    
 }
 aside figure img {
@@ -169,8 +173,8 @@ footer {
     height: 68px;
     align-items: center;
     list-style: none;
-    border-top: 1px solid var(--gold);
-    background-color: var(--lighest-blue);
+    border-top: 4px solid var(--gold);
+    background-color: var(--white)
 }
 footer span {
     margin-left: 10px;
