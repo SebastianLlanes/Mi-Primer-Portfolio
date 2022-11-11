@@ -14,6 +14,7 @@
 html {
     font-size: 62.5%;
     font-family: 'Alfa Slab One', 'Plus Jakarta Sans', 'Poor Story' ;
+    width: 85vh;
 }
 body {
     width: 100%;
