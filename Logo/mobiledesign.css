@@ -90,8 +90,8 @@ main section nav ul button {
     width: 88px;
     height: 50px;
     text-align: center;
-    background-color: var(--lighest-blue);
-    color: var(--white);
+    background-color: var(--blue);
+    color: var(--blue);
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -120,6 +120,9 @@ main section nav ul button::after {
     z-index: -1; 
   
   
+}
+main section nav ul button img {
+    width: 44px;
 }
 /* main section nav ul button:hover::after {
     transition: all 0.3s ease-out;

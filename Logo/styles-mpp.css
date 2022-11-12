@@ -80,8 +80,8 @@ main section nav ul button {
     width: 88px;
     height: 50px;
     text-align: center;
-    background-color: var(--lighest-blue);
-    color: var(--white);
+    background-color: var(--blue);
+    color: var(--blue);
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -120,6 +120,7 @@ main section nav ul button::after {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
 }
 .html-button_span {
     background: rgba(0,0,0,.7);
@@ -130,7 +131,7 @@ main section nav ul button::after {
 	right: 0;
     align-items: flex-start;
 	display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 .html-button_span img {
     height: 440px;
@@ -138,6 +139,9 @@ main section nav ul button::after {
 .inactive {
     display: none;
 
+}
+main section nav ul button img {
+    width: 44px;
 }
 aside {
     display: flex;
