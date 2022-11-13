@@ -6,7 +6,8 @@
         if (contador == 0) {
               htmlDiploma.classList.remove('inactive');
               contador = 1;
-        } else {htmlDiploma.classList.add('inactive');
+           } else {
+                htmlDiploma.classList.add('inactive');
                 contador = 0;
             }
         }
@@ -25,9 +26,10 @@ const cssButton = document.getElementsByClassName('.segundo-boton')
 const gitButton = document.getElementsByClassName('.tercer-boton')
 const jsButton = document.getElementsByClassName('.cuarto-boton')
 
-let botones = [htmlButton, cssButton, gitButton, jsButton]
+let botones = [htmllButton, cssButton, gitButton, jsButton]
 
+// for ([i=0]; [i<botones.length]; [i++]) {
+
+// }
 
 htmlButton.addEventListener('click', showDiploma, true)
-
- 
