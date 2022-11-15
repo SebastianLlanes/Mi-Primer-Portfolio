@@ -1,35 +1,34 @@
- const htmlButton = document.querySelector('.html-button');
- const htmlDiploma = document.querySelector('.html-button_span');
- let contador = 0;
+  
+   const html = document.querySelector('.diploma-html')
+   const css = document.querySelector('.diploma-css')
+   const git = document.querySelector('.diploma-git')
+   const js = document.querySelector('.diploma-js')
+   const rd = document.querySelector('.diploma-rd')
 
-  function showDiploma() {
-        if (contador == 0) {
-              htmlDiploma.classList.remove('inactive');
-              contador = 1;
-           } else {
-                htmlDiploma.classList.add('inactive');
-                contador = 0;
-            }
-        }
+
+   const htmlButton = document.querySelector('.primer-boton')
+   const cssButton = document.querySelector('.segundo-boton')
+   const gitButton = document.querySelector('.tercer-boton')
+   const jsButton = document.querySelector('.cuarto-boton')
+   const responsiveDesign = document.querySelector('.quinto-boton')
+
+const htmlOpen = htmlButton.addEventListener('click', () => {
+   html.classList.toggle('inactive')
+})
+
+const jsOpen = jsButton.addEventListener('click', () => {
+   js.classList.toggle('inactive')
+})
+
+const cssOpen = cssButton.addEventListener('click', () => {
+   css.classList.toggle('inactive')
+})
+
+const gitOpen = gitButton.addEventListener('click', () => {
+      git.classList.toggle('inactive')
+})
+
+const rdOpen = responsiveDesign.addEventListener('click', () => {
+   rd.classList.toggle('inactive')
+})
  
-
-
-const html = document.getElementsByClassName('.diploma-html')
-const css = document.getElementsByClassName('.diploma-css')
-const git = document.getElementsByClassName('.diploma-git')
-const js = document.getElementsByClassName('.diploma-js')
-
-let diploma = [html, css, git, js]
-
-const htmllButton = document.getElementsByClassName('.primer-boton')
-const cssButton = document.getElementsByClassName('.segundo-boton')
-const gitButton = document.getElementsByClassName('.tercer-boton')
-const jsButton = document.getElementsByClassName('.cuarto-boton')
-
-let botones = [htmllButton, cssButton, gitButton, jsButton]
-
-// for ([i=0]; [i<botones.length]; [i++]) {
-
-// }
-
-htmlButton.addEventListener('click', showDiploma, true)
