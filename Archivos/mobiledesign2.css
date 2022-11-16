@@ -14,10 +14,11 @@
 html {
     font-size: 62.5%;
     font-family: 'Alfa Slab One', 'Plus Jakarta Sans', 'Poor Story' ;
-    width: 85vh;
+    width: 100%;
 }
 body {
     width: 100%;
+    overflow-x: hidden;
 }
 header {
     width: 100%;
@@ -37,6 +38,8 @@ main {
     justify-content: space-around;
     border-top: 4px ridge var(--gold);
     background-color: var(--blue);
+    width: 100vh;
+    overflow-x: hidden;
 }
 main section {
     display: flex;
@@ -185,6 +188,7 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     padding: 30px 0 25px 0;
+    width: 100vh;
     height: 68px;
     align-items: center;
     list-style: none;

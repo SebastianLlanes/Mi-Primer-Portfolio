@@ -147,7 +147,6 @@ main section nav ul button img {
 aside {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     padding: 47px 50px 0 0;
 }
 aside figure {
@@ -164,6 +163,15 @@ aside figure {
 aside figure img {
     width: 244px;
 }
+/* aside span {
+    font-family: 'Plus Jakarta Sans';
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: var(--lighest-blue);
+    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+    align-self: flex-end;
+} */
 aside div {
     color: var(--white);
     font-size: 1.6rem;
