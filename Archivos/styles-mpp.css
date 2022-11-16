@@ -12,8 +12,13 @@
     padding: 0;
 }
 html {
+    height: 100%;
     font-size: 62.5%;
     font-family: 'Alfa Slab One', 'Plus Jakarta Sans', 'Poor Story' ;
+}
+body {
+    height: 100%;
+    overflow-y: hidden;
 }
 header {
     width: 100%;

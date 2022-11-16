@@ -13,11 +13,15 @@
 }
 html {
     width: fit-content;
+    height: 100%;
+    overflow-y: hidden;
     font-size: 62.5%;
     font-family: 'Alfa Slab One', 'Plus Jakarta Sans', 'Poor Story' ;
 }
 body {
     width: 100%;
+    height: 100%;
+    overflow-y: hidden;
 }
 header {
     width: 100%;
@@ -34,7 +38,7 @@ header img {
 main {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-around;
+    align-items: center;
     border-top: 4px ridge var(--gold);
     background-color: var(--blue);
 }
@@ -75,9 +79,9 @@ main section div:nth-child(2) ul {
 main section div:nth-child(2) ul li {
     margin-left: 40px;
 }
-main section nav {
-    margin-left: 240px;
-}
+/* main section nav {
+  
+} */
 main section nav ul {
     display: flex;
     width: 100vh;
