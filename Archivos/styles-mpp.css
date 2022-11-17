@@ -37,7 +37,10 @@ main {
     justify-content: space-around;
     height: 80%;
     border-top: 4px ridge var(--gold);
-    background-color: var(--blue);
+    background-image: url(../images/desktop.jpg);
+    background-size: 100%;
+    background-position: center;
+    backdrop-filter: blur(20px)
 }
 main section {
     display: flex;
@@ -51,20 +54,25 @@ main section div:nth-child(1) {
     text-align: center;
     border: 8px groove;
     border-radius: 5px;
-    background-color: var(--gold);
-    color: var(--blue);
+    background-color: unset;
+    backdrop-filter: blur(3px);
+    filter: drop-shadow(2px 4px 6px black);
+    color: var(--gold);
+    -webkit-text-stroke: 1.4px var(--black);
     font-size: 2.4rem;
     font-family: 'Plus Jakarta Sans';
     
 }
 main section div:nth-child(2) {
     display: flex;
-    background-color: var(--gold);
+    background: unset;
+    backdrop-filter: blur(2px);
     border: 5px groove;
     font-family: 'Plus Jakarta Sans';
     font-weight: bold;
-    font-size: 1.6rem;
-    color: var(--lighest-blue);
+    font-size: 2.4rem;
+    color: var(--gold);
+    -webkit-text-stroke: 1.4px var(--black);
 }
 main section div:nth-child(2) ul {
     display: flex;
@@ -76,6 +84,7 @@ main section div:nth-child(2) ul li {
 }
 main section nav ul {
     display: flex;
+    backdrop-filter: blur(2px)
 }
 main section nav ul button {
     margin-left: 10px;
@@ -85,8 +94,8 @@ main section nav ul button {
     width: 88px;
     height: 50px;
     text-align: center;
-    background-color: var(--blue);
-    color: var(--blue);
+    filter: drop-shadow(2px 16px 6px black);
+    background: border-box;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -94,7 +103,7 @@ main section nav ul button {
 }
 main section nav ul button:hover {
     color: var(--gold);
-    box-shadow: 0 0 15px  var(--gold);
+    box-shadow: 0 0 50px  var(--gold);
     text-shadow: 0 0 15px  var(--gold);
 
 }
@@ -130,14 +139,12 @@ main section nav ul button::after {
 }
 .html-button_span {
     background: rgba(0,0,0,.7);
-	position: fixed;
-	top: 72px;
-	bottom: 0;
-	left: 0;
-	right: 0;
-    align-items: flex-start;
-	display: flex;
-    justify-content: center;
+    position: fixed;
+    top: 0px;
+    bottom: 100%;
+    right: 0;
+    display: flex;
+    flex-direction: column-reverse;
 }
 .html-button_span img {
     height: 440px;
@@ -152,17 +159,15 @@ main section nav ul button img {
 aside {
     display: flex;
     flex-direction: column;
-    padding: 47px 50px 0 0;
+    padding: 47px 100px 0px 0px;
 }
 aside figure {
     margin-top: 6px;
-    margin-right: 120px;
-    height: 40%;
-    background-color: #9599E2;
-    background-image: linear-gradient(180deg, #9599E2 0%, #8BC6EC 10%, #9fe2bf 66%, #ccccff 100%);
-    border-top: 8px groove var(--white);
-    border-right: 8px groove var(--white);
-    border-left: 8px groove var(--white);
+    margin-right: 60px;
+    height: 62%;
+    background: unset;
+    backdrop-filter: blur(3px);
+    border: 8px groove var(--white);
    
 }
 aside figure img {
@@ -178,10 +183,13 @@ aside figure img {
     align-self: flex-end;
 } */
 aside div {
-    color: var(--white);
-    font-size: 1.6rem;
+    color: var(--gold);
+    font-size: 2rem;
     font-family: 'Plus Jakarta Sans';
-    margin-top: 100px;
+    margin-top: 20px;
+    backdrop-filter: blur(1px);
+    filter: drop-shadow(12px 20px 24px black);
+    -webkit-text-stroke: 1.4px var(--black);
 }
 footer {
     display: flex;
@@ -192,7 +200,7 @@ footer {
     align-items: center;
     list-style: none;
     border-top: 4px solid var(--gold);
-    background-color: var(--white)
+    background-color: darkgrey;
 }
 footer span {
     margin-left: 10px;
