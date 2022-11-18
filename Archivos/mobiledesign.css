@@ -12,7 +12,7 @@
     padding: 0;
 }
 html {
-    width: fit-content;
+    width: 100%;
     height: 100%;
     overflow-y: hidden;
     font-size: 62.5%;
@@ -38,42 +38,54 @@ header img {
 main {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: flex-end;
     align-items: center;
     border-top: 4px ridge var(--gold);
-    background-color: var(--blue);
+    height: 80%;
+    border-top: 4px ridge var(--gold);
+    background-image: url(../images/desktop.jpg);
+    background-size: 100%;
+    background-position: center;
+    backdrop-filter: blur(20px)
 }
 main section {
-    display: flex;
+    display: inline-grid;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-items: center;
 }
 main section div:nth-child(1) {
     margin: 10px 0;
     height: 90px;
     width: 380px;
     text-align: center;
+    justify-self: center;
     border: 8px groove;
     border-radius: 5px;
-    background-color: var(--gold);
-    color: var(--blue);
     font-size: 1.9rem;
     font-family: 'Plus Jakarta Sans';
+    background-color: unset;
+    backdrop-filter: blur(3px);
+    filter: drop-shadow(2px 4px 6px black);
+    color: var(--gold);
+    -webkit-text-stroke: 1.4px var(--black);
     
 }
 main section div:nth-child(2) {
     display: flex;
     margin-bottom: 10px;
-    background-color: var(--gold);
+    margin-left: 40px;
     border: 5px groove;
     font-family: 'Plus Jakarta Sans';
     font-weight: bold;
-    font-size: 1.4rem;
-    color: var(--lighest-blue);
+    font-size: 2.2rem;
+    background: unset;
+    backdrop-filter: brightness(0.8);
+    color: var(--gold);
+    -webkit-text-stroke: 1.4px var(--black);
 }
 main section div:nth-child(2) ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     list-style: circle;
 }
 main section div:nth-child(2) ul li {
@@ -84,7 +96,7 @@ main section div:nth-child(2) ul li {
 } */
 main section nav ul {
     display: flex;
-    width: 100vh;
+    width: 100%;
     margin-bottom: 8px;
 }
 main section nav ul button {
@@ -95,8 +107,8 @@ main section nav ul button {
     width: 88px;
     height: 50px;
     text-align: center;
-    background-color: var(--blue);
-    color: var(--blue);
+    filter: drop-shadow(2px 16px 6px black);
+    background: border-box;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -162,17 +174,13 @@ aside {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    padding: 12px 0px 0 12px;
 }
 aside figure {
     margin-top: 6px;
     margin-right: 20px;
     width: 165px;
-    background-color: #9599E2;
-    background-image: linear-gradient(180deg, #9599E2 0%, #8BC6EC 10%, #9fe2bf 66%, #ccccff 100%);
-    border-top: 8px groove var(--white);
-    border-right: 8px groove var(--white);
-    border-left: 8px groove var(--white);
+    backdrop-filter: brightness(0.3);
+    border: 8px groove var(--white);
    
 }
 aside figure img {
@@ -180,9 +188,10 @@ aside figure img {
 }
 aside div {
     color: var(--white);
+    backdrop-filter: brightness(0.9);
     font-size: 1.6rem;
     font-family: 'Plus Jakarta Sans';
-    padding-bottom: 36px
+    padding-bottom: 50px
 }
 footer {
     display: flex;
@@ -193,7 +202,7 @@ footer {
     align-items: center;
     list-style: none;
     border-top: 4px solid var(--gold);
-    background-color: var(--white)
+    background-color: darkgrey;
 }
 footer span {
     margin-left: 10px;

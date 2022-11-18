@@ -66,7 +66,7 @@ main section div:nth-child(1) {
 main section div:nth-child(2) {
     display: flex;
     background: unset;
-    backdrop-filter: blur(2px);
+    backdrop-filter: brightness(0.8);
     border: 5px groove;
     font-family: 'Plus Jakarta Sans';
     font-weight: bold;
@@ -166,7 +166,7 @@ aside figure {
     margin-right: 60px;
     height: 62%;
     background: unset;
-    backdrop-filter: blur(3px);
+    backdrop-filter: brightness(0.3);
     border: 8px groove var(--white);
    
 }
@@ -187,7 +187,7 @@ aside div {
     font-size: 2rem;
     font-family: 'Plus Jakarta Sans';
     margin-top: 20px;
-    backdrop-filter: blur(1px);
+    backdrop-filter: brightness(0.9);
     filter: drop-shadow(12px 20px 24px black);
     -webkit-text-stroke: 1.4px var(--black);
 }
