@@ -38,8 +38,8 @@ main {
     height: 80%;
     border-top: 4px ridge var(--gold);
     background-image: url(../images/desktop.jpg);
-    background-size: 100%;
     background-position: center;
+    background-size: cover;
     backdrop-filter: blur(20px)
 }
 main section {
@@ -84,7 +84,8 @@ main section div:nth-child(2) ul li {
 }
 main section nav ul {
     display: flex;
-    backdrop-filter: blur(2px)
+    backdrop-filter: blur(2px);
+    border-bottom: 1px groove var(--gold);
 }
 main section nav ul button {
     margin-left: 10px;
@@ -138,13 +139,21 @@ main section nav ul button::after {
     justify-content: center;
 }
 .html-button_span {
-    background: rgba(0,0,0,.7);
-    position: fixed;
-    top: 0px;
-    bottom: 100%;
-    right: 0;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 110px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    background: rgba(0,0,0,.7);
+	position: fixed;
+    height: 81%;
+    z-index: 1;
+    
+	
+
 }
 .html-button_span img {
     height: 440px;

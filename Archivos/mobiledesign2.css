@@ -20,7 +20,7 @@ html {
     
 }
 body {
-    width: 300px;
+    width: 100%;
     overflow-x: hidden;
 }
 header {
@@ -40,7 +40,7 @@ main {
     display: flex;
     border-top: 4px ridge var(--gold);
     background-color: var(--blue);
-    width: 300px;
+    width: 100%;
     overflow-x: hidden;
    
 }
@@ -54,12 +54,14 @@ main section {
 main section div:nth-child(1) {
     height: 90px;
     width: 250px;
+    margin-top: 20px;
     margin-right: 14px;
     text-align: center;
     border: 8px groove;
     border-radius: 5px;
-    background-color: var(--gold);
-    color: var(--blue);
+    background-color: unset;
+    backdrop-filter: brightness(0.5);
+    color: var(--gold);
     font-size: 1.3rem;
     font-family: 'Plus Jakarta Sans';
     
@@ -67,13 +69,14 @@ main section div:nth-child(1) {
 main section div:nth-child(2) {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
-    background-color: var(--gold);
+    margin: 20px 40px 10px;
+    background-color: unset;
+    backdrop-filter: brightness(0.5);
     border: 5px groove;
     font-family: 'Plus Jakarta Sans';
     font-weight: bold;
     font-size: 1.4rem;
-    color: var(--lighest-blue);
+    color: var(--gold);
 }
 main section div:nth-child(2) ul {
     display: flex;
@@ -88,19 +91,17 @@ main section nav {
 }
 main section nav ul {
     display: flex;
-    width: 300px;
+    width: 100%;
+    margin: 25px 36px 8px 0;
     margin-bottom: 8px;
 }
 main section nav ul button {
     margin-left: 10px;
-    border: 0px groove var(--white);
     border-radius: 30px;
     font-family: 'Plus Jakarta Sans';
     width: 40px;
     height: 32px;
     text-align: center;
-    background-color: var(--blue);
-    color: var(--blue);
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -153,10 +154,12 @@ main section nav ul button img {
     align-items: center;
 	display: flex;
     justify-content: flex-start;
+    height: 72%;
+    z-index: 1;
 }
 .html-button_span img {
     align-self: center;
-    height: 220px;
+    height: 260px;
 }
 .inactive {
     display: none;
@@ -171,27 +174,31 @@ aside {
 aside figure {
     align-self: flex-start;
     margin-top: 6px;
-    width: 120px;
-    background-color: #9599E2;
-    background-image: linear-gradient(180deg, #9599E2 0%, #8BC6EC 10%, #9fe2bf 66%, #ccccff 100%);
+    margin-left: 24px;
+    width: 160px;
+    background-color: unset;
     border: 8px groove var(--white);
    
 }
 aside figure img {
-    width: 110px
+    width: 140px;
+    height: 160px;
 }
 aside div {
     display: flex;
     flex-direction: column;
-    color: var(--white);
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-family: 'Plus Jakarta Sans';
     padding-bottom: 12px;
     padding-top: 12px;
+    color: var(--gold);
+    backdrop-filter: brightness(0.4);
+    filter: drop-shadow(12px 20px 24px black);
+    -webkit-text-stroke: 0.5px var(--black);
 }
 footer {
     padding-bottom: 36px;
-    width: 280px;
+    width: 100%;
     height: 68px;
     align-items: center;
     list-style: none;

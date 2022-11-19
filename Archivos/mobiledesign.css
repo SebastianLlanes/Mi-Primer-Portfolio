@@ -44,7 +44,7 @@ main {
     height: 80%;
     border-top: 4px ridge var(--gold);
     background-image: url(../images/desktop.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     backdrop-filter: blur(20px)
 }
@@ -64,10 +64,10 @@ main section div:nth-child(1) {
     font-size: 1.9rem;
     font-family: 'Plus Jakarta Sans';
     background-color: unset;
-    backdrop-filter: blur(3px);
+    backdrop-filter: brightness(0.5);
     filter: drop-shadow(2px 4px 6px black);
     color: var(--gold);
-    -webkit-text-stroke: 1.4px var(--black);
+    -webkit-text-stroke: 0.8px var(--black);
     
 }
 main section div:nth-child(2) {
@@ -79,9 +79,9 @@ main section div:nth-child(2) {
     font-weight: bold;
     font-size: 2.2rem;
     background: unset;
-    backdrop-filter: brightness(0.8);
+    backdrop-filter: brightness(0.5);
     color: var(--gold);
-    -webkit-text-stroke: 1.4px var(--black);
+    -webkit-text-stroke: 0.8px var(--black);
 }
 main section div:nth-child(2) ul {
     display: flex;
@@ -98,6 +98,7 @@ main section nav ul {
     display: flex;
     width: 100%;
     margin-bottom: 8px;
+    border-bottom: 1px groove var(--gold);
 }
 main section nav ul button {
     margin-left: 10px;
@@ -154,17 +155,20 @@ main section nav ul button img {
 .html-button_span {
     background: rgba(0,0,0,.7);
 	position: fixed;
-	top: 72px;
+    height: 81%;
+    z-index: 1;
+    padding-bottom: 110px;
+	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-    align-items: flex-start;
 	display: flex;
     flex-direction: column;
+    justify-content: flex-end;
 }
 .html-button_span img {
     align-self: center;
-    height: 220px;
+    height: 320px;
 }
 .inactive {
     display: none;
