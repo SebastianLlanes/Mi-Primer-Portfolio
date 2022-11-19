@@ -156,6 +156,7 @@ main section nav ul button::after {
 
 }
 .html-button_span img {
+    align-self: center;
     height: 440px;
 }
 .inactive {
